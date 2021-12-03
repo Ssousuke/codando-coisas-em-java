@@ -1,8 +1,8 @@
-package heranca.application;
+package account.application;
 
-import heranca.entities.Account;
-import heranca.entities.BusinessAcount;
-import heranca.entities.SavingsAccount;
+import account.entities.Account;
+import account.entities.BusinessAcount;
+import account.entities.SavingsAccount;
 
 public class Main {
     public static void main(String[] args) {

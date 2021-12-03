@@ -1,4 +1,4 @@
-package heranca.entities;
+package account.entities;
 
 public class Account {
     private int number;
