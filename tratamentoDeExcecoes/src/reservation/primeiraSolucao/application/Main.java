@@ -33,9 +33,9 @@ public class Main {
             checkIn = sdf.parse(sc.next());
 
             System.out.println("Data do check-Out: (dd/MM/yyyy)");
+            checkOut = sdf.parse(sc.next());
 
             Date now = new Date();
-            checkOut = sdf.parse(sc.next());
             if (checkIn.before(now) || checkOut.before(now)) {
                 System.out.println("As data de reserva devem ser futuras!");
             } else if (!checkOut.after(checkIn)) {
