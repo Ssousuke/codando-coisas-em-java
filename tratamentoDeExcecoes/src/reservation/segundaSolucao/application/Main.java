@@ -1,4 +1,4 @@
-package reservation.segundaSolucao.model.application;
+package reservation.segundaSolucao.application;
 
 import reservation.segundaSolucao.model.entities.Reservation;
 
