@@ -38,7 +38,7 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.SECONDS);
     }
 
-    public String updateDates(Date newCheckin, Date newCheckout) {
+    public void updateDates(Date newCheckin, Date newCheckout) {
         this.checkIn = newCheckin;
         this.checkOut = newCheckout;
     }
