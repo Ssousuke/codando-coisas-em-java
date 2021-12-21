@@ -47,11 +47,21 @@ public class Accounts {
         this.withdraw = withdraw;
     }
 
-    public void deposit(double amount){
-        // Retorna deposito
+    public void deposit(double amount) {
+        if (amount <= 0) {
+            throw new DomainException("Erro ao depositar: O valor tem que ser maior que zero (0)");
+        } else {
+            this.balance += amount;
+        }
     }
 
-    public void withdraw(double amount){
-        // Retorna saque
+    public void withdraw(double amount) {
+        if (amount > this.balance | this.withdraw < amount) {
+            throw new DomainException("Erro ao efetuar o saque: O valor solicitado é superior ao valor permitido.");
+        } else if (amount <= 0) {
+            throw new DomainException("Erro ao efetuar o saque: O valor solicitado deve ser maior que zero (0).");
+        } else {
+            this.balance -= amount;
+        }
     }
 }
