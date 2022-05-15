@@ -14,6 +14,5 @@ Nesse repositório tem:
 ## Conteúdo de referência
 
 - Livro: Java 8 Como programar
-- Curso: Java COMPLETO Programação Orientada a Objetos + Projetos
-
-**Sayo!**
+- Curso: Programação Orientada a Objetos Java
+- Alura: Formação Java
