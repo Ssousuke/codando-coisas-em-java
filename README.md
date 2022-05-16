@@ -1,11 +1,13 @@
-# Java 8 +
+# Meu guia pessoal de referência da linguagem Java 8 >
 
-Nesse repositório tem:
+Esse é meu guia pessoal da linguagem Java nas versões 8>, aqui eu estou sempre commitando códigos referentes a sintaxe desde o básico ao avançado. As fontes que estão me servindo de base para estudos estão listadas no final.
+
+## Nesse repositório tem:
 
 - Introdução a linguagem e sintaxe
 - Estrutura de repetição e condicional
 - Introdução a orientação e objetos
-- Herança e Polimorfismo
+- Herança e polimorfismo
 - Enumeração e composição
 - Vetores e matrizes
 - Tratamento de exceções
