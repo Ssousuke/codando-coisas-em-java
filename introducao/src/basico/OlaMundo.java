@@ -1,4 +1,4 @@
-package repeticao;
+package basico;
 
 public class OlaMundo {
     public static void main(String[] args) {
