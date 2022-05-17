@@ -2,19 +2,19 @@ package byteBank;
 
 public class CriaConta {
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta();
-        primeiraConta.saldo = 0.0;
-        primeiraConta.deposita(500.0);
-        System.out.println(primeiraConta.saldo);
-        boolean retornoDoMetodo = primeiraConta.saca(100.0);
-        System.out.println(primeiraConta.saldo);
-        System.out.println(retornoDoMetodo);
+        Cliente wesley = new Cliente();
+        wesley.nome = "Wesley Farias";
+        wesley.cpf = "075.230.463-12";
+        wesley.profissao = "Desenvolvedor de Software";
 
-        Conta segundaConta = new Conta();
-        segundaConta.deposita(1000.0);
-        segundaConta.transfere(500.0, primeiraConta);
-        System.out.println(segundaConta.saldo);
-        System.out.println(primeiraConta.saldo);
+        Conta wesleyConta = new Conta();
+        wesleyConta.deposita(100);
 
+        // Composição é basicamente usar uma classe dentro da outra.
+        // Mais precisamente é fazer com que duas classes troquem informações.
+        // neste casso a Classe Conta está recebendo informações da classe Cliente.
+        wesleyConta.titular = wesley;
+
+        System.out.println(wesleyConta.titular.nome);
     }
 }
