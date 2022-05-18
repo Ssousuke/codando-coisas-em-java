@@ -2,12 +2,9 @@ package byteBank;
 
 public class CriaConta {
     public static void main(String[] args) {
-        Cliente wesley = new Cliente();
-        wesley.setNome("Wesley Farias");
-        wesley.setCpf("555.555.555-12");
-        wesley.setProfissao("Desenvolvedor de software");
+        Cliente wesley = new Cliente("Wesley Farias", "555.555.555-12", "Desenvolvedor de Software");
 
-        Conta wesleyConta = new Conta();
+        Conta wesleyConta = new Conta(1001, 23345);
         wesleyConta.deposita(100.0);
         wesleyConta.deposita(200.0);
         wesleyConta.saca(150.0);
@@ -18,5 +15,11 @@ public class CriaConta {
         wesleyConta.setTitular(wesley);
         System.out.println(wesleyConta.getTitular().getNome());
         System.out.println(wesleyConta.getSaldo());
+
+        // setando uma nova profissão
+        wesleyConta.getTitular().setProfissao("Desenvolvedor de Software Júnior");
+        System.out.println(Conta.getTotalDeContas());
+
+
     }
 }
