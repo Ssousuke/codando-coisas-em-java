@@ -10,6 +10,6 @@ public class Gerente extends Funcionario {
     @Override
     public double getBonificacao() {
         // super indica que o atributo vem da super classe
-        return super.getBonificacao()+ super.getSalario();
+        return super.getBonificacao() + super.getSalario();
     }
 }
